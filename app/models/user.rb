@@ -38,7 +38,7 @@ class User < ApplicationRecord
 
     def reset_session_token!
         self.session_token = User.generate_session_token
-        self.save!
+        self.save
         self.session_token
     end
 end
