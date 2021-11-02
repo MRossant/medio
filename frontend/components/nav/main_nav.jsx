@@ -23,7 +23,9 @@ class MainNav extends React.Component {
             <div className="main-nav">
                 <div className="main-nav-items">
                     <h1 id="main-title">Medio</h1>
-                    {display}
+                    <div className="session-items">
+                        {display}
+                    </div>
                 </div>
             </div>
         )

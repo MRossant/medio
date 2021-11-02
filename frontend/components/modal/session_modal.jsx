@@ -32,9 +32,9 @@ const SessionModal = ({modal, hideModal}) => {
 };
 
 const mSTP = state => {
-    debugger
+    // debugger
     return {
-    modal: state.modal
+    modal: state.modal.sessionModal
     }
 };
 
