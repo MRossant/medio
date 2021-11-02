@@ -8,7 +8,9 @@ const mSTP = state => ({
 });
 
 const mDTP = dispatch => ({
-    processForm: user => dispatch(signup(user))
+    action: user => dispatch(signup(user)),
+    showModal: content => dispatch(showModal(content)),
+    hideModal: () => dispatch(hideModal())
 });
 
 export default connect(mSTP, mDTP)(SessionForm);

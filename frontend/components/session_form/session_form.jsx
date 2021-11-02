@@ -24,7 +24,7 @@ class SessionForm extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         const user = Object.assign({}, this.state);
-        this.props.processForm(user);
+        this.props.action(user).then(() => this.props.hideModal)
     }
 
     render() {
@@ -63,7 +63,7 @@ class SessionForm extends React.Component {
                         onChange={this.handleInput('password')}
                         />
                     </label>
-                    <button onClick={this.handleSubmit}>Sign Up!</button>
+                    <button onClick={this.handleSubmit}>Sign Up</button>
                 </form>)
         } else {
             display = (
@@ -82,7 +82,7 @@ class SessionForm extends React.Component {
                     onChange={this.handleInput('password')}
                     />
                 </label>
-                <button onClick={this.handleSubmit}>Login!</button>
+                <button onClick={this.handleSubmit}>Sign In</button>
             </form>)
         }
 
