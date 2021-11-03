@@ -17,6 +17,10 @@ class Home extends React.Component {
                         <button id="start-writing-btn" onClick={() => this.props.showModal("signup")}>Start Writing</button>
                     </div>
                 </div>
+                <div id="trending-stories">
+                    <i className="fas fa-bolt"></i>
+                    <h3 id="trending-headline">TRENDING ON MEDIUM</h3>
+                </div>
             </div>
         )
     }
