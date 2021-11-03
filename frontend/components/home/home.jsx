@@ -19,7 +19,7 @@ class Home extends React.Component {
                 </div>
                 <div id="trending-stories">
                     <i className="fas fa-bolt"></i>
-                    <h3 id="trending-headline">TRENDING ON MEDIUM</h3>
+                    <h3 id="trending-headline">TRENDING ON MEDIO</h3>
                 </div>
             </div>
         )

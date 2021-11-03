@@ -158,6 +158,7 @@ class SessionForm extends React.Component {
 
         return (
             <div className="main-session-form">
+                <i className="fas fa-times" onClick={this.props.hideModal}></i>
                 <h2 className="form-title">{this.props.formType === 'signup' ? 'Join Medio.' : 'Welcome back.'}</h2>
                 <div className="session-errors">{this.showErrors()}</div>
                 {display}
