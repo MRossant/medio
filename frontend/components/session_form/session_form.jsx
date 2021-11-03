@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import { login } from '../../actions/session';
 
 class SessionForm extends React.Component {
     constructor(props) {
@@ -45,15 +46,18 @@ class SessionForm extends React.Component {
     }
 
     demoUser() {
-        this.setState({
+        const demo = {
             email: 'john.appleseed@demo.com',
             password: '123456',
             handle: '',
             full_name: ''
-        });
+        };
+
+        this.props.login(demo);
+
             // .then(() => login(this.state))
             // .then(() => hideModal())
-        this.props.login(this.state);
+        // this.props.login(this.state);
         this.props.hideModal();
     }
 

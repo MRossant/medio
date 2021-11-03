@@ -27,9 +27,12 @@ export const signup = formUser => dispatch => SessionApiUtil.postUser(formUser)
     .then(user => dispatch(receiveCurrentUser(user)))
     .fail(errors => dispatch(receiveErrors(errors)))
 
-export const login = formUser => dispatch => SessionApiUtil.postSession(formUser)
+export const login = formUser => dispatch => {
+    // debugger
+    return SessionApiUtil.postSession(formUser)
     .then(user => dispatch(receiveCurrentUser(user)))
     .fail(errors => dispatch(receiveErrors(errors)))
+}
 
 export const logout = () => dispatch => SessionApiUtil.deleteSession()
     .then(() => dispatch(logoutCurrentUser()))

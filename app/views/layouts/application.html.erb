@@ -7,6 +7,10 @@
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
+    <%= image_tag 'splash-pic.jpg' %>
+    <script type="text/javascript">
+      window.splash = "<%= image_url('splash-pic.jpg') %>";
+    </script>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
     </style>
