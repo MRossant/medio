@@ -54,7 +54,7 @@
     .form-title {
         font-family: 'Playfair Display', serif;
         font-size: 30px;
-        margin-top: 30px;
+        margin-top: 80px;
         margin-left: 30%
     }
 
@@ -62,5 +62,21 @@
         display: block;
         width: 80%;
         margin-top: 10px;
+    }
+
+    .session-form-labels {
+        margin-top: 130px;
+        margin-left: 130px;
+    }
+
+    .session-form-btn {
+        background: black;
+        border-radius: 30px;
+        border: none;
+        padding: 10px 10px;
+        color: white;
+        cursor: pointer;
+        margin-top: 50px;
+        margin-left: 250px;
     }
 }

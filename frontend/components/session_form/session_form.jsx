@@ -34,26 +34,48 @@ class SessionForm extends React.Component {
 
         if (formTypeState === 'signup') {
             display = (
-                    <form className="session-form">
-                    <label>Full Name
-                        <input 
-                        type="text"
-                        value={this.state.full_name} 
-                        onChange={this.handleInput('full_name')}
-                        />
-                    </label>
+                <form className="session-form">
+                    <div className="session-form-labels">
+                        <label>Full Name
+                            <input 
+                            type="text"
+                            value={this.state.full_name} 
+                            onChange={this.handleInput('full_name')}
+                            />
+                        </label>
+                        <label>Email
+                            <input 
+                            type="text"
+                            value={this.state.email} 
+                            onChange={this.handleInput('email')}
+                            />
+                        </label>
+                        <label>Handle
+                            <input 
+                            type="text"
+                            value={this.state.handle} 
+                            onChange={this.handleInput('handle')}
+                            />
+                        </label>
+                        <label>Password
+                            <input 
+                            type="password"
+                            value={this.state.password} 
+                            onChange={this.handleInput('password')}
+                            />
+                        </label>
+                    </div>
+                    <button className="session-form-btn" onClick={this.handleSubmit}>Sign Up</button>
+                </form>)
+        } else {
+            display = (
+            <form className="session-form">
+                <div className="session-form-labels">
                     <label>Email
                         <input 
                         type="text"
                         value={this.state.email} 
                         onChange={this.handleInput('email')}
-                        />
-                    </label>
-                    <label>Handle
-                        <input 
-                        type="text"
-                        value={this.state.handle} 
-                        onChange={this.handleInput('handle')}
                         />
                     </label>
                     <label>Password
@@ -63,26 +85,8 @@ class SessionForm extends React.Component {
                         onChange={this.handleInput('password')}
                         />
                     </label>
-                    <button onClick={this.handleSubmit}>Sign Up</button>
-                </form>)
-        } else {
-            display = (
-            <form className="session-form">
-                <label>Email
-                    <input 
-                    type="text"
-                    value={this.state.email} 
-                    onChange={this.handleInput('email')}
-                    />
-                </label>
-                <label>Password
-                    <input 
-                    type="password"
-                    value={this.state.password} 
-                    onChange={this.handleInput('password')}
-                    />
-                </label>
-                <button onClick={this.handleSubmit}>Sign In</button>
+                </div>
+                <button className="session-form-btn" onClick={this.handleSubmit}>Sign In</button>
             </form>)
         }
 
