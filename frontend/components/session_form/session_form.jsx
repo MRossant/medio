@@ -158,7 +158,7 @@ class SessionForm extends React.Component {
 
         return (
             <div className="main-session-form">
-                <h2 className="form-title">{this.props.formType === 'signup' ? 'Join Medium.' : 'Welcome back.'}</h2>
+                <h2 className="form-title">{this.props.formType === 'signup' ? 'Join Medio.' : 'Welcome back.'}</h2>
                 <div className="session-errors">{this.showErrors()}</div>
                 {display}
                 {demo}

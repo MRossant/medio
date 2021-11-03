@@ -1,0 +1,30 @@
+#splash-background {
+    height: 400px;
+    width: 100%;
+    // object-fit: contain;
+    // background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    #splash-container {
+        width: 50%;
+        padding: 40px 280px;
+        #splash-text {
+            font-family: 'Zen Antique', serif;
+            font-size: 90px;
+            color: white;
+        }
+
+        #start-writing-btn {
+            margin-top: 2%;
+            background: white;
+            border-radius: 30px;
+            border: none;
+            padding: 10px 10px;
+            font-size: 15px;
+            color: black;
+            cursor: pointer;
+        }
+    }
+}

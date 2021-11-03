@@ -11,11 +11,12 @@ class Home extends React.Component {
         return (
             <div>
                 <MainNavContainer />
-                {/* <div id="splash-container">
-                    <img id="splash-photo" src={SplashPic} />
-                    <h1 id="splash-text">Medio is a place to write, read, and connect.</h1>
-                    <button id="start-writing-btn">Start Writing</button>
-                </div> */}
+                <div id="splash-background" style={{backgroundImage: `url(${window.splash})`}}>
+                    <div id="splash-container">
+                        <h1 id="splash-text">Medio is a place to write, read, and connect.</h1>
+                        <button id="start-writing-btn" onClick={() => this.props.showModal("signup")}>Start Writing</button>
+                    </div>
+                </div>
             </div>
         )
     }
