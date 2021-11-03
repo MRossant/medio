@@ -39,6 +39,7 @@ class SessionForm extends React.Component {
 
     handleSubmit(e) {
         e.preventDefault();
+        this.props.hideErrors();
         const user = Object.assign({}, this.state);
         this.props.action(user).then(() => this.props.hideModal())
     }
@@ -70,6 +71,10 @@ class SessionForm extends React.Component {
 
     render() {
         const formTypeState = this.props.formType;
+
+        const demo = this.props.formType === 'login' ? (
+            <button className="demo-user-btn" onClick={() => this.demoUser()}>Demo User</button>
+        ) : "";
 
         const swapper = this.props.formType === 'signup' ? (
             <div>
@@ -144,7 +149,6 @@ class SessionForm extends React.Component {
                     </label>
                 </div>
                 <button className="session-form-btn" onClick={this.handleSubmit}>Sign In</button>
-                <button className="demo-user-btn" onClick={() => this.demoUser()}>Demo User</button>
             </form>)
         }
 
@@ -153,6 +157,7 @@ class SessionForm extends React.Component {
                 <h2 className="form-title">{this.props.formType === 'signup' ? 'Join Medium.' : 'Welcome back.'}</h2>
                 <div className="session-errors">{this.showErrors()}</div>
                 {display}
+                {demo}
                 {swapper}
             </div>
         )

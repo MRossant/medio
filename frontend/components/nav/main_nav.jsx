@@ -21,11 +21,9 @@ class MainNav extends React.Component {
 
         return (
             <div className="main-nav">
-                <div className="main-nav-items">
-                    <h1 id="main-title">Medio</h1>
-                    <div className="session-items">
-                        {display}
-                    </div>
+                <h1 id="main-title">Medio</h1>
+                <div className="session-items">
+                    {display}
                 </div>
             </div>
         )

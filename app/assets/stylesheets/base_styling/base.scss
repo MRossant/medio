@@ -1,27 +1,24 @@
-.main-nav-items {
+.main-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 75px;
+    border-bottom: 1px solid black;
+
     #main-title {
         font-family: 'Playfair Display', serif;
+        font-weight: 700;
         font-size: 35px;
-        margin-left: 200px;
-        margin-top: 1.6%;
+        margin-left: 15%;
     }
     .session-items {
         font-family: Arial, Helvetica, sans-serif;
-        margin-right: 200px;
-        margin-top: 10px;
-        &visited {
-            color: black;
-        }
+        margin-right: 15%;
     }
-}
-
-.main-nav {
-    height: 75px;
-    border-bottom: 1px solid black;
-}
+    #nav-link-login:visited {
+        color: black;
+    }
+}  
 
 #get-started-btn {
     background: black;
@@ -38,35 +35,57 @@
 }
 
 .main-session-form {
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20%;
+    // padding: 20px;
     background-color: white;
     box-shadow: 0px 0px 7px -4px #000000;
     height: 600px;
     width: 565px;
-    margin-left: 50px;
+    // margin-left: 50px;
     margin-top: 100px;
     font-family: Arial, Helvetica, sans-serif;
 
+    .session-errors {
+        font-family: 'Playfair Display', serif;
+        font-weight: 400;
+        font-size: 14px;
+        color: red;
+        .session-error {
+            padding: 5px;
+        }
+    }
+
     .form-title {
         font-family: 'Playfair Display', serif;
+        font-weight: 400;
         font-size: 30px;
-        margin-top: 80px;
-        margin-left: 30%
+        margin-top: 30px;
+        // margin-left: 30%
     }
 
     .session-form label, input {
         display: block;
-        width: 80%;
+        font-family: 'Playfair Display', serif;
+        font-weight: 400;
+        width: 100%;
         margin-top: 10px;
     }
 
     .session-form-labels {
-        margin-top: 130px;
-        margin-left: 130px;
+        margin-top: 80px;
+        // margin-left: 130px;
+    }
+
+    .session-form-labels label input {
+        padding: 5px;
+        outline: 0;
+        font-size: 15px;
+        border-width: 0 0 1px;
+        border-color: black;
     }
 
     .session-form-btn {
@@ -77,13 +96,18 @@
         color: white;
         cursor: pointer;
         margin-top: 50px;
-        margin-left: 250px;
+        margin-left: 58px;
     }
 }
 
 .session-swapper-btn {
     cursor: pointer;
     color: green;
+}
+
+.session-swapper {
+    margin-top: 18px;
+    // margin-left: 190px;
 }
 
 .demo-user-btn {
@@ -94,5 +118,5 @@
         color: white;
         cursor: pointer;
         margin-top: 18px;
-        margin-left: 240px;
+        // margin-left: 240px;
 }
