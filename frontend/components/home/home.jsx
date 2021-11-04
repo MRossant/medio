@@ -6,6 +6,9 @@ import MainNavContainer from '../nav/main_nav_container';
 class Home extends React.Component {
 
     // Add componentDidMount to fetch the stories
+    componentDidMount() {
+        this.props.fetchStories();
+    }
 
     render() {
         return (

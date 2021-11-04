@@ -21,7 +21,7 @@ class MainNav extends React.Component {
 
         return (
             <div className="main-nav">
-                <h1 id="main-title">Medio</h1>
+                <h1 id="main-title"><Link to="/" id="logo-link">Medio</Link></h1>
                 <div className="session-items">
                     {display}
                 </div>
