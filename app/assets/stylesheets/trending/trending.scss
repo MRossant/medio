@@ -10,18 +10,6 @@
     }
 }
 
-#trending-stories {
-    // display: flex;
-    // justify-content: space-evenly;
-    // justify-content: center;
-    // align-items: center;
-    // flex-wrap: wrap;
-    // flex-direction: row;
-    // margin-left: 15%;
-    // width: 1800px;
-    // font-family: Arial, Helvetica, sans-serif;
-}
-
 .trending-stories-list {
     display: flex;
     flex-wrap: wrap;
@@ -41,16 +29,6 @@
         font-size: 30px;
     }
 
-    .trending-name {
-        margin-bottom: 3%;
-    }
-
-    .fa-user-circle {
-        margin-right: 5%;
-        font-size: 25px;
-        color: #F5EFEE;
-    }
-
     .trending-title {
         margin-bottom: 3%;
         font-weight: 600;
@@ -58,5 +36,21 @@
 
     .trending-date {
         color: gray;
+    }
+}
+
+.trending-profile {
+    display: flex;
+    // justify-content: flex-start;
+    // align-items:inherit;
+    // width: 400px;
+    .fa-user-circle {
+        margin-right: 3%;
+        font-size: 25px;
+        color: #F5EFEE;
+    }
+
+    .trending-name {
+        margin-bottom: 3%;
     }
 }
