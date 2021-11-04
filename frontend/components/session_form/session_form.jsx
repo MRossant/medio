@@ -52,12 +52,7 @@ class SessionForm extends React.Component {
             handle: '',
             full_name: ''
         };
-
         this.props.login(demo);
-
-            // .then(() => login(this.state))
-            // .then(() => hideModal())
-        // this.props.login(this.state);
         this.props.hideModal();
     }
 

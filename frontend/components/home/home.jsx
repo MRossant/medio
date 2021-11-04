@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import MainNavContainer from '../nav/main_nav_container';
+import StoryIndex from '../story/story_index';
 // import SplashPic from '../../../app/assets/images/splash-pic.jpg';
 
 class Home extends React.Component {
@@ -20,9 +21,12 @@ class Home extends React.Component {
                         <button id="start-writing-btn" onClick={() => this.props.showModal("signup")}>Start Writing</button>
                     </div>
                 </div>
-                <div id="trending-stories">
+                <div id="trending-header">
                     <i className="fas fa-bolt"></i>
                     <h3 id="trending-headline">TRENDING ON MEDIO</h3>
+                </div>
+                <div id="trending-stories">
+                    <StoryIndex stories={this.props.stories}/>
                 </div>
             </div>
         )
