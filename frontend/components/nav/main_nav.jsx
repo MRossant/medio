@@ -12,16 +12,16 @@ class MainNav extends React.Component {
             </div>
         ) : (
             <div className="main-nav-links">
-                <Link to="#" id="nav-link-login" onClick={() => this.props.showModal('login')}>Sign In
+                <Link to="#" className="nav-link-login" onClick={() => this.props.showModal('login')}>Sign In
                 </Link>
 
-                <button id="get-started-btn" onClick={() => this.props.showModal('signup')}>Get started</button>
+                <button className="get-started-btn" onClick={() => this.props.showModal('signup')}>Get started</button>
             </div>
         )
 
         return (
             <div className="main-nav">
-                <h1 id="main-title"><Link to="/" id="logo-link">Medio</Link></h1>
+                <h1 id="main-title"><Link to="/" className="logo-link">Medio</Link></h1>
                 <div className="session-items">
                     {display}
                 </div>

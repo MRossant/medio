@@ -35,6 +35,15 @@
     .trending-title {
         margin-bottom: 3%;
         font-weight: 600;
+
+        #trending-title-link {
+            text-decoration: none;
+            color: black;
+
+            &:visited {
+                color: black;
+            }
+        }
     }
 
     .trending-date {
