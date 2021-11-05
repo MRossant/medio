@@ -10,6 +10,10 @@
     }
 }
 
+#trending-stories {
+    border-bottom: 1px solid #D3D3D3;
+}
+
 .trending-stories-list {
     display: flex;
     flex-wrap: wrap;
@@ -21,7 +25,6 @@
 .story-index-item {
     display: flex;
     width: 600px;
-    // flex-wrap: wrap;
     padding: 20px 60px;
     .trending-num {
         margin-right: 2%;
