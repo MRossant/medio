@@ -4,16 +4,35 @@ import StoryNavContainer from '../nav/story_nav_container';
 
 class StoryShow extends React.Component {
 
-    // componentDidMount() {
-    //     this.props.fetchStory(this.props.story)
-    // }
+    componentDidMount() {
+        this.props.fetchStory(this.props.match.params.storyId)
+    }
+
+    componentDidUpdate(prevProps, prevState) {
+        // debugger
+        // console.log(`prevProps: ${prevProps.match.params.storyId}`)
+        // console.log(`this.props: ${this.props}`)
+        if (prevProps.match.params.storyId !== this.props.match.params.storyId) {
+           this.props.fetchStory(this.props.match.params.storyId) 
+        }
+    }
 
     formatDate = dateString => {
         const options = { month: "short", day: "numeric" }
         return new Date(dateString).toLocaleDateString(undefined, options)
     }
 
+    formatBody = body => {
+        let storyArr = body.split('/n');
+        let formattedArr = storyArr.map((para, idx) => (<p className="story-show-para" key={idx}>{para}</p>));
+        return formattedArr
+    }
+
     render() {
+
+        if (!this.props.story) {
+            return null
+        }
 
         const leftNav = (
             <div className="story-author-nav">
@@ -34,7 +53,10 @@ class StoryShow extends React.Component {
                             <h3 className="story-author-name">{this.props.story.author.full_name}</h3>
                             <p className="story-date">{this.formatDate(this.props.story.created_at)}</p>
                         </div>
-                        <p className="story-show-body">{this.props.story.body}</p>
+                        <div className="story-show-body">
+                            {this.formatBody(this.props.story.body)}
+                        </div>
+                        {/* <p className="story-show-body">{this.props.story.body}</p> */}
                     </div>
                 </div>
             </div>

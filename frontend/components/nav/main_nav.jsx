@@ -1,14 +1,23 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import UserNavContainer from '../user/user_nav_container';
 
 class MainNav extends React.Component {
+
+    toggleDrop() {
+        if (!this.props.modal) {
+            this.props.showModal('profile');
+        } else {
+            this.props.hideModal();
+        }
+    }
+
     render() {
         const { currentUser } = this.props;
         
         const display = currentUser ? (
-            <div>
-                <p>Signed In</p>
-                <button onClick={this.props.logout}>Sign Out</button>
+            <div className="user-profile-nav">
+                <i className="fas fa-user-circle" onClick={() => this.toggleDrop()}/>
             </div>
         ) : (
             <div className="main-nav-links">

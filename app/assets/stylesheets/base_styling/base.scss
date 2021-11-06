@@ -135,3 +135,16 @@
         margin-top: 18px;
         // margin-left: 240px;
 }
+
+.user-profile-nav {
+    .fa-user-circle {
+        font-size: 30px;
+        color: lightgray;
+        cursor: pointer;
+    }
+}
+
+.user-modal-content {
+    position: absolute;
+    z-index: 2;
+}

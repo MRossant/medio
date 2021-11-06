@@ -5,7 +5,7 @@ import { fetchUser } from '../../actions/user_actions'
 import { showModal } from "../../actions/modal_actions";
 
 const mSTP = (state, ownProps) => {
-    debugger
+    // debugger
     return {
     currentUser: state.entities.users[state.session.id],
     story: state.entities.stories[ownProps.match.params.storyId]
@@ -13,7 +13,7 @@ const mSTP = (state, ownProps) => {
 };
 
 const mDTP = dispatch => ({
-    fetchStory: story => dispatch(fetchStory(story)),
+    fetchStory: storyId => dispatch(fetchStory(storyId)),
     fetchUser: user => dispatch(fetchUser(user)),
     showModal: content => dispatch(showModal(content)),
     logout: () => dispatch(logout())

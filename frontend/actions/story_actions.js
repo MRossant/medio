@@ -22,7 +22,7 @@ const removeStory = storyId => ({
 export const fetchStories = () => dispatch => StoryApiUtil.fetchStories()
     .then(stories => dispatch(receiveStories(stories)))
 
-export const fetchStory = story => dispatch => StoryApiUtil.fetchStory(story)
+export const fetchStory = storyId => dispatch => StoryApiUtil.fetchStory(storyId)
     .then(story => dispatch(receiveStory(story)))
 
 export const updateStory = story => dispatch => StoryApiUtil.updateStory(story)

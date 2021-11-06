@@ -8,6 +8,7 @@
 
 # Create Users
 User.destroy_all
+ActiveRecord::Base.connection.reset_pk_sequence!('users')
 
 user1 = User.create!(email: "john.appleseed@demo.com", full_name: "John Appleseed", handle: "@JApp", password: "123456")
 user2 = User.create!(email: "2@123.com", full_name: "Rick James", handle: "@RJames", password: "123456")
@@ -37,38 +38,41 @@ user25 = User.create!(email: "25@123.com", full_name: "Marc Ferlet", handle: "@f
 
 # Create Stories
 Story.destroy_all
+ActiveRecord::Base.connection.reset_pk_sequence!('stories')
 
 story1 = Story.create!(title: "The Meaning of Decentralization",
 body: '“Decentralization” is one of the words that is used in the cryptoeconomics space the most frequently, 
 and is often even viewed as a blockchain’s entire raison d’être, but it is also one of the words that is perhaps 
-defined the most poorly. Thousands of hours of research, and billions of dollars of hashpower, have been spent for
+defined the most poorly. /n Thousands of hours of research, and billions of dollars of hashpower, have been spent for
  the sole purpose of attempting to achieve decentralization, and to protect and improve it, and when discussions get
   rivalrous it is extremely common for proponents of one protocol (or protocol extension) to claim that the opposing
-   proposals are “centralized” as the ultimate knockdown argument.',
+   proposals are “centralized” as the ultimate knockdown argument. /n Many times when people talk about the virtues of a blockchain, they describe the convenience benefits of having “one central database”; that centralization is logical centralization, and it’s a kind of centralization that is arguably in many cases good (though Juan Benet from IPFS would also push for logical decentralization wherever possible, because logically decentralized systems tend to be good at surviving network partitions, work well in regions of the world that have poor connectivity, etc; see also this article from Scuttlebot explicitly advocating logical decentralization). /n 
+Architectural centralization often leads to political centralization, though not necessarily — in a formal democracy, politicians meet and hold votes in some physical governance chamber, but the maintainers of this chamber do not end up deriving any substantial amount of power over decision-making as a result. /n In computerized systems, architectural but not political decentralization might happen if there is an online community which uses a centralized forum for convenience, but where there is a widely agreed social contract that if the owners of the forum act maliciously then everyone will move to a different forum (communities that are formed around rebellion against what they see as censorship in another forum likely have this property in practice).
+Logical centralization makes architectural decentralization harder, but not impossible — see how decentralized consensus networks have already been proven to work, but are more difficult than maintaining BitTorrent. And logical centralization makes political decentralization harder — in logically centralized systems, it’s harder to resolve contention by simply agreeing to “live and let live”.',
 author_id: 12)
 story2 = Story.create!(title: "The Field Equations of Gravitation",
-body: 'In two recently published papers1 I have shown how to obtain field equations of gravitation that comply with the
+body: 'In two recently published papers I have shown how to obtain field equations of gravitation that comply with the
  postulate of general relativity, i.e., which in their general formulation are covariant under arbitrary substitutions of
-  space-time variables. Historically they evolved in the following sequence. First, I found equations that contain the Newtonian
+  space-time variables. Historically they evolved in the following sequence. /n First, I found equations that contain the Newtonian
    theory as an approximation and are also covariant under arbitrary substitutions of determinant 1. Then I found that these equations
-    are equivalent to generally-covariant ones if the scalar of the energy tensor of "matter" vanishes. The coordinate
+    are equivalent to generally-covariant ones if the scalar of the energy tensor of "matter" vanishes. /n The coordinate
      system could then be specialized by the simple rule that v/-g must equal 1, which leads to an immense simplification
       of the equations of the theory. It has to be mentioned, however, that this requires the introduction of the hypothesis that the scalar
-       of the energy tensor of matter vanishes. I now quite recently found that one can get away without this hypothesis about the energy tensor
+       of the energy tensor of matter vanishes. /n I now quite recently found that one can get away without this hypothesis about the energy tensor
         of matter merely by inserting it into the field equations in a slightly different way. The field equations for vacuum, onto which I based
          the explanation of the Mercury perihelion, remain unaffected by this modification. In order not to force the reader constantly to consult
           the previous publications, I repeat here the considerations in their entirety.',
 author_id: 7)
 story3 = Story.create!(title: "The Mimic and the Maestro: How Mimics become Top Performers",
 body: "In the summer of 2013, Robin Thicke released his seminal album and song of the same name Blurred Lines. The industry veteran had crafted and released five previous albums, 
-developing something of a cult following. At the age of 16, Thicke had secured a record deal with Interscope, and many in the industry saw him as a prodigy of sorts.
-A year later Thicke, working under his mentor Brian McKnight, received his first writing credit on McKnight’s second album, I Remember You. From then on friends would jokingly call him “Brian McWhite.” 
-Thicke’s first few albums had a soulful sound that swooned over melodies about his marriage instead of fleeting promiscuity. And in a field full of black artists, he stood out.
+developing something of a cult following. At the age of 16, Thicke had secured a record deal with Interscope, and many in the industry saw him as a prodigy of sorts. /n
+A year later Thicke, working under his mentor Brian McKnight, received his first writing credit on McKnight’s second album, I Remember You. /n From then on friends would jokingly call him “Brian McWhite.” 
+Thicke’s first few albums had a soulful sound that swooned over melodies about his marriage instead of fleeting promiscuity. And in a field full of black artists, he stood out. /n
 “Blurred Lines” was different than Thicke’s previous recordings. The song was more poppy, overtly sexual, and, with a Pharrell co-sign, catapulted Thicke to the forefront of music. Overnight, Thicke became one of 
 the biggest acts in the industry. But just as quickly as he struck stardom did his celebrity light dim. His last album’s biggest hit amounted to a paltry #82 on the Billboard Top 100. Arguably, it wasn’t the aggressive
- sexuality, public divorce, or even claims of misogyny that sank his rising tide. Rather, it was the appearance of imitation.
+ sexuality, public divorce, or even claims of misogyny that sank his rising tide. Rather, it was the appearance of imitation. /n
 Seemingly as quickly as he became famous the lawsuits poured in, suggesting that Thicke’s music was largely the result of copying Marvin Gaye. From the onset, Thicke denied the allegations, stating that
- “it comes right down to knowing the difference between being inspired and stealing.” Over the next few years, Thicke’s story would change as he claimed the inspiration came from prescription drugs to Pharrell
+ “it comes right down to knowing the difference between being inspired and stealing.” /n Over the next few years, Thicke’s story would change as he claimed the inspiration came from prescription drugs to Pharrell
   being the primary innovator behind the song. Regardless, the court battles ensued and were eventually settled, but the damage had been done. Thicke was labelled a clone, a cultural appropriator, an imitator.",
 author_id: 8)
 story4 = Story.create!(title: "How To Go Broke and Live Large With Your Friends",
