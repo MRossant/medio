@@ -147,4 +147,81 @@
 .user-modal-content {
     position: absolute;
     z-index: 2;
+    border: 1px solid lightgray;
+    right: 11.8%;
+    top: 8%;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+    .dropdown-item-list {
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+
+        .dropdown-item {
+            padding: 20px;
+        }
+
+        .dropdown-user-info {
+            display: flex;
+            flex-direction: column;
+
+            span {
+                color: gray;
+            }
+        }
+
+        .user-info {
+            border-bottom: 1px solid lightgray;
+            line-height: 1.6;
+        }
+    }
+}
+
+.user-modal-content:after, .user-modal-content:before {
+    content: '';
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    bottom: 100%;
+    left: 45%;
+}
+
+.user-modal-content:after {
+    border-bottom: 10px solid white;
+    border-top: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+
+.user-modal-content:before {
+    border-bottom: 11px solid lightgray;
+    border-top: 11px solid transparent;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    margin-right: 3%;
+}
+
+.dropdown-link {
+    text-decoration: none;
+    color: gray;
+
+    &:visited {
+        color: inherit;
+    }
+
+    &:hover {
+        color: black;
+    }
+}
+
+.user-modal-screen {
+    position: fixed;
+    background: transparent;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
 }

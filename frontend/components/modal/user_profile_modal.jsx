@@ -19,8 +19,10 @@ const UserProfileModal = ({modal, hideModal}) => {
     }
 
     return (
-        <div className="user-modal-content" onClick={e => e.stopPropagation()}>
-            {component}
+        <div className="user-modal-screen" onClick={hideModal}>
+            <div className="user-modal-content" onClick={e => e.stopPropagation()}>
+                {component}
+            </div>
         </div>
     )
 };

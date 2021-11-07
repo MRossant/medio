@@ -6,26 +6,25 @@ class UserNav extends React.Component {
     render() {
     
         return (
-            // <div className="user-dropdown-container">
-            //     <button className="dropdown-toggle" onClick={() => this.props.showModal('profile')}>{userProfile}</button>
-                <div className="dropdown">
-                    <ul>
-                        <li className="dropdown-item">
-                            <Link to="/">{this.props.currentUser.full_name}</Link>
-                            {this.props.currentUser.handle}
-                        </li>
-                        <li className="dropdown-item">
-                            <Link to="/story/new">Write A Story</Link>
-                        </li>
-                        <li className="dropdown-item">
-                            <Link to="/story/saves">Saves</Link>
-                        </li>
-                        <li className="dropdown-item">
-                            <Link to="/" onClick={this.props.logout}>Sign Out</Link>
-                        </li>
-                    </ul>
-                </div>
-            // </div>
+            <div className="dropdown">
+                <ul className="dropdown-item-list">
+                    <li className="dropdown-item user-info">
+                        <div className="dropdown-user-info">
+                            <Link className="dropdown-link" to="/">{this.props.currentUser.full_name}</Link>
+                            <span>{this.props.currentUser.handle}</span>
+                        </div>
+                    </li>
+                    <li className="dropdown-item">
+                        <Link className="dropdown-link" to="/story/new">Write A Story</Link>
+                    </li>
+                    <li className="dropdown-item">
+                        <Link className="dropdown-link" to="/story/saves">Saves</Link>
+                    </li>
+                    <li className="dropdown-item">
+                        <Link className="dropdown-link" to="/" onClick={this.props.logout}>Sign Out</Link>
+                    </li>
+                </ul>
+            </div>
         )
     }
 };
