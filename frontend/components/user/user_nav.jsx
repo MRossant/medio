@@ -3,13 +3,12 @@ import { Link } from 'react-router-dom';
 
 class UserNav extends React.Component {
 
-    // signOut() {
-    //     this.props.hideModal();
-    //     this.props.logout();
-    // }
+    signOut() {
+        this.props.hideModal();
+        this.props.logout();
+    }
 
     render() {
-        // debugger
     
         return (
             <div className="dropdown">
@@ -27,7 +26,7 @@ class UserNav extends React.Component {
                         <Link className="dropdown-link" to="/story/saves">Saves</Link>
                     </li>
                     <li className="dropdown-item">
-                        <Link className="dropdown-link" to="/" onClick={this.props.logout}>Sign Out</Link>
+                        <Link className="dropdown-link" to="/" onClick={this.props.signOut}>Sign Out</Link>
                     </li>
                 </ul>
             </div>

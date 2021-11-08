@@ -32,11 +32,11 @@ class StoryForm extends React.Component {
                 <MainNavContainer />
                 <div id="story-form-container">
                     <form className="story-form">
-                        <input 
+                        <Textarea 
                         className="story-form-input title"
-                        type="text"
-                        onChange={this.handleInput('title')}
                         placeholder="Title"
+                        onChange={this.handleInput('title')}
+                        maxLength='80'
                         />
 
                         <Textarea 
