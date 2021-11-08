@@ -28,14 +28,15 @@ export const signup = formUser => dispatch => SessionApiUtil.postUser(formUser)
     .fail(errors => dispatch(receiveErrors(errors)))
 
 export const login = formUser => dispatch => {
-    // debugger
     return SessionApiUtil.postSession(formUser)
     .then(user => dispatch(receiveCurrentUser(user)))
     .fail(errors => dispatch(receiveErrors(errors)))
 }
 
-export const logout = () => dispatch => SessionApiUtil.deleteSession()
+export const logout = () => dispatch => {
+    return SessionApiUtil.deleteSession()
     .then(() => dispatch(logoutCurrentUser()))
     .fail(errors => dispatch(receiveErrors(errors)))
+}
 
 export const hideErrors = () => dispatch => dispatch(removeErrors())

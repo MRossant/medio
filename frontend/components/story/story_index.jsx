@@ -4,7 +4,7 @@ import StoryIndexItem from './story_index_item';
 class StoryIndex extends React.Component {
 
     trendingStories(stories) {
-        return stories.slice(0, 7);
+        return stories.slice(0, 6);
     }
 
     formatDate = dateString => {

@@ -5,9 +5,8 @@ import { logout } from '../../actions/session';
 import StoryNav from './story_nav';
 
 const mSTP = state => {
-    // debugger
     return {
-    currentUser: state.entities.users[state.session.id],
+    currentUser: state.entities.users[state.session.id]
     }
 };
 

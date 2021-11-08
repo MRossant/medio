@@ -1,7 +1,6 @@
 class Story < ApplicationRecord
 
-    validates :title, :body, presence: true
-    validates :author_id, presence: true, uniqueness: true
+    validates :title, :body, :author_id, presence: true
 
     belongs_to :author,
         primary_key: :id,

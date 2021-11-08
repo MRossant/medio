@@ -2,6 +2,7 @@ import { connect } from 'react-redux';
 import MainNav from './main_nav';
 import {logout} from '../../actions/session';
 import { showModal, hideModal } from '../../actions/modal_actions';
+import { withRouter } from 'react-router-dom';
 
 const mSTP = ({ session, entities: { users }, modal}) => ({
     currentUser: users[session.id],
@@ -14,4 +15,4 @@ const mDTP = dispatch => ({
     hideModal: () => dispatch(hideModal())
 });
 
-export default connect(mSTP, mDTP)(MainNav);
+export default withRouter(connect(mSTP, mDTP)(MainNav));

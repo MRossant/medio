@@ -9,9 +9,6 @@ class StoryShow extends React.Component {
     }
 
     componentDidUpdate(prevProps, prevState) {
-        // debugger
-        // console.log(`prevProps: ${prevProps.match.params.storyId}`)
-        // console.log(`this.props: ${this.props}`)
         if (prevProps.match.params.storyId !== this.props.match.params.storyId) {
            this.props.fetchStory(this.props.match.params.storyId) 
         }
@@ -50,7 +47,7 @@ class StoryShow extends React.Component {
                         <h1 className="story-show-title">{this.props.story.title}</h1>
                         <div className="story-author-info">
                             <i className="fas fa-user-circle"></i>
-                            <h3 className="story-author-name">{this.props.story.author.full_name}</h3>
+                            <h3 className="story-author-name"><Link to={`/users/${this.props.story.author.id}`}>{this.props.story.author.full_name}</Link></h3>
                             <p className="story-date">{this.formatDate(this.props.story.created_at)}</p>
                         </div>
                         <div className="story-show-body">

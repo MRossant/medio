@@ -1,8 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import UserNavContainer from '../user/user_nav_container';
 
-class MainNav extends React.Component {
+class UserShowNav extends React.Component {
 
     toggleDrop() {
         if (!this.props.modal) {
@@ -14,17 +13,17 @@ class MainNav extends React.Component {
 
     render() {
         const { currentUser } = this.props;
-
-        const leftNav = this.props.location.pathname === '/story/new' ? (
-            <div className="story-new-left-nav">
-                <Link to="/" id="story-new-logo-link">Medio</Link>
-                <h1 id="story-new-author">Draft in {currentUser.full_name}</h1>
+        const { user } = this.props;
+    
+        const leftNav = (
+            <div className="user-show-left-nav">
+                <Link to="/" id="user-show-logo-link">Medio</Link>
+                <h1 id="user-show-author">{user.full_name}</h1>
+                <button className="follow-user-btn">Follow</button>
             </div>
-        ) : (
-            <h1 id="main-title"><Link to="/" className="logo-link">Medio</Link></h1>
         );
-        
-        const display = currentUser ? (
+
+        const rightNav = currentUser ? (
             <div className="user-profile-nav">
                 <i className="fas fa-user-circle" onClick={() => this.toggleDrop()}/>
             </div>
@@ -34,18 +33,16 @@ class MainNav extends React.Component {
                 </Link>
 
                 <button className="get-started-btn" onClick={() => this.props.showModal('signup')}>Get started</button>
-            </div>
-        )
+            </div> 
+        );
 
         return (
-            <div className="main-nav">
+            <div className="user-show-nav">
                 {leftNav}
-                <div className="session-items">
-                    {display}
-                </div>
+                {rightNav}
             </div>
         )
     }
 };
 
-export default MainNav
+export default UserShowNav;

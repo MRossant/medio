@@ -49,3 +49,28 @@
             margin-top: 10px;
     }
 }
+
+.story-new-left-nav {
+    display: flex;
+    align-items: center;
+    margin-left: 15%;
+    width: 300px;
+
+    #story-new-logo-link {
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+        font-size: 30px;
+        color: green;
+        margin-right: 5%;
+        text-decoration: none;
+
+        &:visited {
+            color: green;
+        }
+    }
+
+    #story-new-author {
+        font-family: 'Source Serif Pro', serif;
+        font-size: 16px;
+    }
+}
