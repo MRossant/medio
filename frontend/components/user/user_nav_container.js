@@ -8,7 +8,6 @@ const mSTP = state => ({
 
 const mDTP = dispatch => ({
     logout: () => dispatch(logout()),
-    // showModal: content => dispatch(showModal(content)),
     hideModal: () => dispatch(hideModal())
 });
 

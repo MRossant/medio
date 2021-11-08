@@ -56,7 +56,6 @@ class StoryShow extends React.Component {
                         <div className="story-show-body">
                             {this.formatBody(this.props.story.body)}
                         </div>
-                        {/* <p className="story-show-body">{this.props.story.body}</p> */}
                     </div>
                 </div>
             </div>

@@ -3,14 +3,23 @@ import { Link } from 'react-router-dom';
 
 class StoryNav extends React.Component {
 
+    toggleDrop() {
+        if (!this.props.modal) {
+            this.props.showModal('profile');
+        } else {
+            this.props.hideModal();
+        }
+    }
+
     render() {
 
+        // debugger 
         const storyAuthor = this.props.story.author
 
         const display = this.props.currentUser ? (
-            <div>
-                <p>Signed In</p>
-                <button onClick={this.props.logout}>Sign Out</button>
+            <div className="user-profile-nav on-story">
+                <Link to="/" id="logo-link">Medio</Link>
+                <i className="fas fa-user-circle" onClick={() => this.toggleDrop()}/>
             </div>
         ) : (
             <div>

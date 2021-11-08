@@ -3,7 +3,13 @@ import { Link } from 'react-router-dom';
 
 class UserNav extends React.Component {
 
+    // signOut() {
+    //     this.props.hideModal();
+    //     this.props.logout();
+    // }
+
     render() {
+        // debugger
     
         return (
             <div className="dropdown">

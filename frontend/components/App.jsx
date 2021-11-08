@@ -6,7 +6,9 @@ import SessionModal from './modal/session_modal';
 import UserProfileModal from './modal/user_profile_modal';
 import HomeContainer from './home/home_container';
 import GreetingContainer from './greeting/greeting_container';
+import { AuthRoute, ProtectedRoute } from '../util/route_utils';
 import StoryShowContainer from './story/story_show_container';
+import StoryFormContainer from './story/story_form_container';
 
 const App = () => (
     <div>
@@ -21,6 +23,7 @@ const App = () => (
         <Route exact path="/login" component={LoginFormContainer}/>
         <Route exact path="/signup" component={SignUpFormContainer}/>
         <Route exact path="/stories/:storyId" component={StoryShowContainer}/>
+        <ProtectedRoute exact path="/story/new" component={StoryFormContainer}/>
     </div>
 );
 
