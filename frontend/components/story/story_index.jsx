@@ -24,13 +24,13 @@ class StoryIndex extends React.Component {
     }
 
     render() {
-        const shuffledArr = this.shuffle(this.props.stories);
+        // const shuffledArr = this.shuffle(this.props.stories);
 
         return (
             <div className="stories-index-container">
                 <ul className="stories-index-list">
                     {
-                        shuffledArr.map((story, idx) => (
+                       this.props.stories.map((story, idx) => (
                             <StoryIndexItem 
                             story={story} 
                             key={idx} 

@@ -60,9 +60,6 @@ class StoryIndexItem extends React.Component {
 
     render() {
 
-        console.log(this.props.currentUser)
-
-
         const bookmark = this.state.bookmarked ? (
             <i className="fas fa-bookmark" onClick={() => this.swapBookmark()}/>
         ) : (
