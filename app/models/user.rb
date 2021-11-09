@@ -13,6 +13,11 @@ class User < ApplicationRecord
         foreign_key: :author_id,
         class_name: :Story
 
+    has_many :bookmarks,
+        primary_key: :id,
+        foreign_key: :bookmarker_id,
+        class_name: :Bookmark
+
     def self.find_by_credentials(email, password)
         user = User.find_by(email: email)
 

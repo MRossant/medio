@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_11_09_145204) do
+ActiveRecord::Schema.define(version: 2021_11_09_204012) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,8 +20,7 @@ ActiveRecord::Schema.define(version: 2021_11_09_145204) do
     t.integer "bookmarked_story_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["bookmarked_story_id"], name: "index_bookmarks_on_bookmarked_story_id"
-    t.index ["bookmarker_id"], name: "index_bookmarks_on_bookmarker_id"
+    t.index ["bookmarker_id", "bookmarked_story_id"], name: "index_bookmarks_on_bookmarker_id_and_bookmarked_story_id", unique: true
   end
 
   create_table "stories", force: :cascade do |t|

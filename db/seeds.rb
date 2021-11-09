@@ -127,3 +127,7 @@ Heat oven to 375 degrees. Heat oil in a large skillet over medium-low. Add onion
 Step 2 /n
 Gently crack eggs into skillet over tomatoes. Season eggs with salt and pepper. Transfer skillet to oven and bake until eggs are just set, 7 to 10 minutes. Sprinkle with cilantro and serve with hot sauce.",
 author_id: "6")
+
+# Create Bookmarks
+Bookmark.destroy_all
+ActiveRecord::Base.connection.reset_pk_sequence!('bookmarks')

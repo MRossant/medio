@@ -2,10 +2,12 @@ class Api::BookmarksController < ApplicationController
 
     def show
         @bookmark = Bookmark.find(params[:id])
+        render :show
     end
 
     def index
         @bookmarks = Bookmark.all
+        render :index
     end
 
     def create

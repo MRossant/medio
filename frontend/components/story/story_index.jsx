@@ -24,7 +24,6 @@ class StoryIndex extends React.Component {
     }
 
     render() {
-
         const shuffledArr = this.shuffle(this.props.stories);
 
         return (
@@ -32,7 +31,16 @@ class StoryIndex extends React.Component {
                 <ul className="stories-index-list">
                     {
                         shuffledArr.map((story, idx) => (
-                            <StoryIndexItem story={story} key={idx} date={this.formatDate(story.created_at)}/>
+                            <StoryIndexItem 
+                            story={story} 
+                            key={idx} 
+                            date={this.formatDate(story.created_at)}
+                            currentUser={this.props.currentUser}
+                            postBookmark={this.props.postBookmark}
+                            deleteBookmark={this.props.deleteBookmark}
+                            showModal={this.props.showModal}
+                            fetchUsers={this.props.fetchUsers}
+                            />
                         ))
                     }
                 </ul>

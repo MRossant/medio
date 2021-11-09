@@ -20,7 +20,7 @@ class UserNav extends React.Component {
                 <ul className="dropdown-item-list">
                     <li className="dropdown-item user-info">
                         <div className="dropdown-user-info">
-                            <Link className="dropdown-link" to="/">{this.props.currentUser.full_name}</Link>
+                            <Link className="dropdown-link" to={`/users/${this.props.currentUser.id}`}>{this.props.currentUser.full_name}</Link>
                             <span>{this.props.currentUser.handle}</span>
                         </div>
                     </li>
