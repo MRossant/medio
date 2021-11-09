@@ -18,6 +18,7 @@ class BookmarkIndex extends React.Component {
                                 <BookmarkIndexItem 
                                 bookmark={bookmark} 
                                 key={idx}
+                                fetchStory={this.props.fetchStory}
                                 />
                                 ))
                             }
