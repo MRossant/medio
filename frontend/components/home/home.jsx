@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import MainNavContainer from '../nav/main_nav_container';
+import TrendingIndex from '../story/trending_index';
 import StoryIndex from '../story/story_index';
 // import SplashPic from '../../../app/assets/images/splash-pic.jpg';
 
@@ -27,7 +28,10 @@ class Home extends React.Component {
                     <h3 id="trending-headline">TRENDING ON MEDIO</h3>
                 </div>
                 <div id="trending-stories">
-                    <StoryIndex stories={this.props.stories}/>
+                    <TrendingIndex stories={this.props.stories}/>
+                </div>
+                <div id="story-index">
+                    <StoryIndex stories={this.props.stories} />
                 </div>
             </div>
         )

@@ -3,30 +3,41 @@ import StoryIndexItem from './story_index_item';
 
 class StoryIndex extends React.Component {
 
-    trendingStories(stories) {
-        return stories.slice(0, 6);
-    }
-
     formatDate = dateString => {
         const options = { month: "short", day: "numeric" }
         return new Date(dateString).toLocaleDateString(undefined, options)
     }
 
+    shuffle = array => {
+        let currentIdx = array.length, randomIdx;
+
+        while (currentIdx != 0) {
+
+            randomIdx = Math.floor(Math.random() * currentIdx);
+            currentIdx--;
+
+            [array[currentIdx], array[randomIdx]] = [
+            array[randomIdx], array[currentIdx]];
+        }
+
+        return array;
+    }
+
     render() {
-        const stories = this.trendingStories(this.props.stories);
+
+        const shuffledArr = this.shuffle(this.props.stories);
 
         return (
-            <div className="trending-stories-container">
-                <ul className="trending-stories-list">
+            <div className="stories-index-container">
+                <ul className="stories-index-list">
                     {
-                        stories.map((story, idx) => (
-                            <StoryIndexItem story={story} key={idx} num={idx+1} date={this.formatDate(story.created_at)}/>
+                        shuffledArr.map((story, idx) => (
+                            <StoryIndexItem story={story} key={idx} date={this.formatDate(story.created_at)}/>
                         ))
                     }
                 </ul>
             </div>
         )
-
     }
 };
 

@@ -13,11 +13,6 @@ import UserShowContainer from './user/user_show_container';
 
 const App = () => (
     <div>
-        {/* <header>
-            <img src={MediumLogo} />
-            <h1 id="main-title">Medio</h1>
-            <GreetingContainer />
-        </header> */}
         <SessionModal />
         <UserProfileModal />
         <Route exact path="/" component={HomeContainer} />

@@ -2,18 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const StoryIndexItem = props => {
-
     return (
         <li className="story-index-item">
-            <p className="trending-num">{`0${props.num}`}</p>
-            <div className="trending-index-info">
-                <div className="trending-profile">
-                    <i className="fas fa-user-circle"></i>
-                    <h3 className="trending-name">{props.story.author.full_name}</h3>
-                </div>
-                <h3 className="trending-title"><Link id="trending-title-link" to={`/stories/${props.story.id}`}>{props.story.title}</Link></h3>
-                <p className="trending-date">{props.date}</p>
+            <div className="story-author-profile">
+                <i className="fas fa-user-circle" />
+                <Link to={`/users/${props.story.author.id}`} className="story-author-name">{props.story.author.full_name}</Link>
             </div>
+            <Link to={`/stories/${props.story.id}`} id="story-title-link">{props.story.title}</Link>
+            <span className="story-date">{props.date}</span>
         </li>
     )
 };

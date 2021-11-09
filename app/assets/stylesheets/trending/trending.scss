@@ -22,7 +22,7 @@
     width: 80%;
 }
 
-.story-index-item {
+.trending-index-item {
     display: flex;
     width: 600px;
     padding: 20px 60px;
@@ -53,9 +53,7 @@
 
 .trending-profile {
     display: flex;
-    // justify-content: flex-start;
-    // align-items:inherit;
-    // width: 400px;
+    
     .fa-user-circle {
         margin-right: 3%;
         font-size: 25px;

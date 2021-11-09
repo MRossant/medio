@@ -71,6 +71,14 @@
                 color: green;
             }
 
+            .link-author-name {
+                text-decoration: none;
+
+                &:visited {
+                    color: green;
+                }
+            }
+
             .story-date {
                 color: lightgray;
             }

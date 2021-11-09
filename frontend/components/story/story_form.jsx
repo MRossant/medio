@@ -18,7 +18,7 @@ class StoryForm extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         this.props.processForm(this.state);
-        this.props.history.push('/');
+        this.props.history.push(`/users/${this.props.currentUser.id}`);
     }
 
     handleInput(field) {
