@@ -11,7 +11,7 @@ class UserShow extends React.Component {
     }
 
     componentDidUpdate(prevProps) {
-        if (prevProps.match.params.userId !== this.props.match.params.userId) {
+        if (prevProps.user.stories !== this.props.user.stories) {
            this.props.fetchUser(this.props.match.params.userId) 
         }
     }
@@ -21,6 +21,7 @@ class UserShow extends React.Component {
         if (!this.props.user) {
             return null
         }
+        
         // shows most recent written stories first
         const storiesArr = Object.values(this.props.user.stories).reverse();
 
