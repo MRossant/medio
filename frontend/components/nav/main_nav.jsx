@@ -18,7 +18,7 @@ class MainNav extends React.Component {
         const leftNav = this.props.location.pathname === '/story/new' ? (
             <div className="story-new-left-nav">
                 <Link to="/" id="story-new-logo-link">Medio</Link>
-                <h1 id="story-new-author">{currentUser.full_name}</h1>
+                <h1 id="story-new-author">Draft in {currentUser.full_name}</h1>
             </div>
         ) : (
             <h1 id="main-title"><Link to="/" className="logo-link">Medio</Link></h1>

@@ -76,10 +76,10 @@ Seemingly as quickly as he became famous the lawsuits poured in, suggesting that
   being the primary innovator behind the song. Regardless, the court battles ensued and were eventually settled, but the damage had been done. Thicke was labelled a clone, a cultural appropriator, an imitator.",
 author_id: 8)
 story4 = Story.create!(title: "How To Go Broke and Live Large With Your Friends",
-body: "Katie took all of my money. And then I went broke.
-But that’s what friends are for.
-Tens years later, yesterday, we went to an advance screening of Louis CK’s new movie, “I Love You, Daddy” coming out on November 17.
-Louis stars, wrote, directors, produces, etc the movie. He filmed it as secretly as possible.
+body: "Katie took all of my money. And then I went broke. /n
+But that’s what friends are for. /n
+Tens years later, yesterday, we went to an advance screening of Louis CK’s new movie, “I Love You, Daddy” coming out on November 17. /n
+Louis stars, wrote, directors, produces, etc the movie. He filmed it as secretly as possible. /n
 Why did Katie O’Hagan (in photo taken at the screening yesterday. We had the whole theater) do such a horrible thing to me? She literally took all my money.",
 author_id: 19)
 story5 = Story.create!(title: "10 Interview Questions Every Javascript Developer Should Know",

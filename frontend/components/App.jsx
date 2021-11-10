@@ -10,6 +10,7 @@ import { AuthRoute, ProtectedRoute } from '../util/route_utils';
 import StoryShowContainer from './story/story_show_container';
 import StoryFormContainer from './story/story_form_container';
 import UserShowContainer from './user/user_show_container';
+import BookmarkIndexContainer from './bookmark/bookmark_index_container';
 
 const App = () => (
     <div>
@@ -21,6 +22,7 @@ const App = () => (
         <Route exact path="/stories/:storyId" component={StoryShowContainer}/>
         <Route exact path="/users/:userId" component={UserShowContainer}/>
         <ProtectedRoute exact path="/story/new" component={StoryFormContainer}/>
+        <Route exact path="/story/saves" component={BookmarkIndexContainer}/>
     </div>
 );
 

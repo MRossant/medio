@@ -1,0 +1,82 @@
+.current-user-floater {
+    position: absolute;
+    margin-left: 25%;
+    top: 3%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: green;
+}
+
+.bookmark-index-container {
+    // display: flex;
+    // flex-direction: column;
+    width: 30%;
+    margin-left: 35%;
+
+    #bookmark-index-header {
+        margin-top: 7%;
+        margin-bottom: 7%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        font-size: 35px;
+    }
+
+    .bookmark-author {
+        margin-right: 2%;
+        text-decoration: none;
+        color: black;
+        &:visited {
+            color: black;
+        }
+    }
+
+    .bookmarked-item-info {
+        margin-bottom: 3%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+    }
+
+    .bookmark-title {
+        text-decoration: none;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        padding: 20px 0;
+        &:visited {
+            color: back;
+        }
+    }
+
+    .bookmark-body {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        &:visited {
+            color: black;
+        }
+    }
+
+    .bookmark-read-more {
+        text-decoration: none;
+        color: green;
+        padding-bottom: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        &:visited {
+            color: green;
+        }
+    }
+
+    .bookmark-story-para {
+        font-family: 'Source Serif Pro', serif;
+        font-weight: 100;
+        line-height: 1.6;
+        margin-bottom: 2%;
+        margin-top: 2%;
+    }
+}
+
+.bookmarked-index-item {
+    margin-bottom: 10%;
+    border-bottom: 1px solid lightgray;
+}
