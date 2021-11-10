@@ -6,7 +6,17 @@ import { login, signup } from './actions/session';
 
 document.addEventListener("DOMContentLoaded", () => {
   const root = document.getElementById("root");
-  const store = configureStore();
+
+  let preloadedState = undefined;
+  if (window.currentUser) {
+    preloadedState = {
+      entities: {users: {[window.currentUser.id]: window.currentUser}},
+      session: {id: window.currentUser.id}
+    };
+  }
+
+  const store = configureStore(preloadedState);
+
   window.store = store;
   window.getState = store.getState;
   window.dispatch = store.dispatch;

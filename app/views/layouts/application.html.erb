@@ -12,6 +12,18 @@
 	    window.splash = "<%= image_url('splash-pic5.jpg') %>";
 	  </script>
 
+    <%  if current_user %>
+      <script>
+        window.currentUser = {
+          "id": <%= current_user.id %>,
+          "email": "<%= current_user.email %>",
+          "handle": "<%= current_user.handle %>",
+          "full_name": "<%= current_user.full_name %>",
+          "bio": "<%= current_user.bio %>"
+        };
+      </script>
+    <% end %>
+
     <script src="https://kit.fontawesome.com/a92af1662d.js" crossorigin="anonymous"></script>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans:wght@300&family=Playfair+Display:wght@400;700&family=Source+Serif+Pro:wght@200&family=Zen+Antique&display=swap');

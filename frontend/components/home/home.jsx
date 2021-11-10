@@ -14,6 +14,30 @@ class Home extends React.Component {
 
     render() {
 
+        const recommended = (
+            <div className="discover-container">
+                <h3 className="discover-header">DISCOVER MORE OF WHAT MATTERS TO YOU</h3>
+                <div className="discover-categories">
+                    <button className="discover-tag">Self</button>
+                    <button className="discover-tag">Relationships</button>
+                    <button className="discover-tag">Data Science</button>
+                    <button className="discover-tag">Programming</button>
+                    <button className="discover-tag">Productivity</button>
+                    <button className="discover-tag">Javascript</button>
+                    <button className="discover-tag">Machine Learning</button>
+                    <button className="discover-tag">Politics</button>
+                    <button className="discover-tag">Health</button>
+                </div>
+                <div className="discover-footer">
+                    <p className="discover-footer-tagline">DISCOVER MORE OF WHAT I CAN DO</p>
+                    <div className="discover-links-container">
+                        <a href="https://www.linkedin.com/in/matteo-rossant-26ab65106/" className="discover-links">LinkedIn</a>
+                        <a href="https://github.com/MRossant" className="discover-links">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        )
+
         return (
             <div>
                 <MainNavContainer />
@@ -30,11 +54,14 @@ class Home extends React.Component {
                 <div id="trending-stories">
                     <TrendingIndex stories={this.props.stories}/>
                 </div>
-                <div id="story-index">
-                    <StoryIndexContainer 
-                    stories={this.props.stories} 
-                    currentUser={this.props.currentUser} 
-                    showModal={this.props.showModal}/>
+                <div id="bottom-splash">
+                    <div id="story-index">
+                        <StoryIndexContainer 
+                        stories={this.props.stories} 
+                        currentUser={this.props.currentUser} 
+                        showModal={this.props.showModal}/>
+                    </div>
+                    {recommended}
                 </div>
             </div>
         )

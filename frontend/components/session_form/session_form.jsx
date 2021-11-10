@@ -42,7 +42,7 @@ class SessionForm extends React.Component {
         e.preventDefault();
         this.props.hideErrors();
         const user = Object.assign({}, this.state);
-        this.props.action(user).then(() => this.props.hideModal())
+        this.props.action(user).then(() => this.props.hideModal());
     }
 
     demoUser() {
