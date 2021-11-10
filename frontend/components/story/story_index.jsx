@@ -3,6 +3,34 @@ import StoryIndexItem from './story_index_item';
 
 class StoryIndex extends React.Component {
 
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            currentUser: this.props.currentUser
+        }
+    }
+
+    componentDidMount() {
+        if (!this.props.currentUser) {
+            return null
+        }
+
+        this.setState({currentUser: this.props.currentUser})
+    }
+
+    componentDidUpdate(prevProps) {
+        //login user
+        if (!prevProps.currentUser && this.props.currentUser) {
+            this.setState({currentUser: this.props.currentUser})
+        }
+
+        //logout user
+        if (prevProps.currentUser && !this.props.currentUser) {
+            this.setState({currentUser: null})
+        }
+    }
+
     formatDate = dateString => {
         const options = { month: "short", day: "numeric" }
         return new Date(dateString).toLocaleDateString(undefined, options)
@@ -35,7 +63,7 @@ class StoryIndex extends React.Component {
                             story={story} 
                             key={idx} 
                             date={this.formatDate(story.created_at)}
-                            currentUser={this.props.currentUser}
+                            currentUser={this.state.currentUser}
                             postBookmark={this.props.postBookmark}
                             deleteBookmark={this.props.deleteBookmark}
                             showModal={this.props.showModal}

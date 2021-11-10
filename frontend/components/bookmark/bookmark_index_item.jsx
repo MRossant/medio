@@ -3,10 +3,6 @@ import { Link } from 'react-router-dom';
 
 class BookmarkIndexItem extends React.Component {
 
-    componentDidMount() {
-
-    }
-
     formatDate = dateString => {
         const options = { month: "short", day: "numeric" }
         return new Date(dateString).toLocaleDateString(undefined, options)

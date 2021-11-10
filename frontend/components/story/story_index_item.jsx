@@ -11,6 +11,7 @@ class StoryIndexItem extends React.Component {
 
         this.state = {
             bookmarked: false,
+            bookmark: null,
         }
 
         this.swapBookmark = this.swapBookmark.bind(this);
@@ -33,13 +34,32 @@ class StoryIndexItem extends React.Component {
             let bookmark = bookmarksArr[i];
 
             if (bookmark.bookmarked_story_id === this.props.story.id) {
-                this.setState({bookmarked: true})
+                this.setState({bookmarked: true});
+                this.setState({bookmark: bookmark});
             }
         }
     }
 
     componentDidUpdate(prevProps, prevState) {
+        // console.log(prevProps);
+        // console.log(this.props);
+        if (!prevProps.currentUser && this.props.currentUser) {
+            const bookmarksArr = Object.values(this.props.currentUser.bookmarks);
 
+            for (let i = 0; i < bookmarksArr.length; i++) {
+            let bookmark = bookmarksArr[i];
+
+                if (bookmark.bookmarked_story_id === this.props.story.id) {
+                    this.setState({bookmarked: true});
+                    this.setState({bookmark: bookmark});
+                }
+            }
+        }
+
+        if (prevProps.currentUser && !this.props.currentUser) {
+            this.setState({bookmarked: false});
+            this.setState({bookmark: null});
+        }
     }
 
     swapBookmark() {
@@ -53,7 +73,8 @@ class StoryIndexItem extends React.Component {
             this.props.postBookmark(bookmark)
             this.setState({bookmarked: true})
         } else {
-
+            this.props.deleteBookmark(this.state.bookmark.id);
+            this.setState({bookmarked: false})
         }
     }
 
