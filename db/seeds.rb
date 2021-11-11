@@ -127,6 +127,349 @@ Heat oven to 375 degrees. Heat oil in a large skillet over medium-low. Add onion
 Step 2 /n
 Gently crack eggs into skillet over tomatoes. Season eggs with salt and pepper. Transfer skillet to oven and bake until eggs are just set, 7 to 10 minutes. Sprinkle with cilantro and serve with hot sauce.",
 author_id: "6")
+story9 = Story.create!(title: "Name Your Poison",
+body: "Once, when I was at Beyonce concert, she was hoisted from the main stage and placed on a round platform in the middle of the crowd where she performed the song, Say My Name. /n 
+At one point, she paused, held the microphone towards a guy pressed against the circular stage and asked, “What’s your name, honey?” And in a breaking, excited, and borderline hysterical voice, the guy answered, “N..n..n…i..g..e..l.” She pulled the mic back and said, “Ok, Nigel. Say my name.” And Nigel said, “Beyonce.” And in a state of otherworldly reverence that has barely dissipated in the many years since that moment, so did I. /n 
+So I beg to differ with Shakespeare’s take, “What’s in a name? That which we call a rose by any other name would smell as sweet.” Instead, I tend be more aligned with Confucius who argued that, “The beginning of wisdom is to call things by their proper name.” (Ironically, using social media could mark the end of wisdom.) This all leads us, naturally, to news from The Verge that Facebook is planning to rebrand the company with a new name. /n My first thought was that they should change the name to Philip Morris. Or maybe Enron, or Lehman Brothers. But then I realized it would be even more timely and awesome if the company just changed its name to Ye. Of course, our current displeasure with Facebook is more related to its algorithm than its name. Or as Beyonce and Destiny’s Child foreshadowed so many years ago, “Say my name, say my name. You actin’ kinda shady.” /n The company apparently wants to create a new brand to account for its move into the metaverse business. Because of this, and the company’s population (which towers over nation states), maybe they should change the name to Facebook Universe. The initials would certainly be on brand.",
+author_id: 15)
+story10 = Story.create!(title: "Twist And Shout",
+body: "Well, shake it up, baby, now (Shake it up, baby)
+Twist and shout (Twist and shout)
+C'mon c'mon, c'mon, c'mon, baby, now (Come on baby)
+Come on and work it on out (Work it on out) /n
+
+Well, work it on out, honey (Work it on out)
+You know you look so good (Look so good)
+You know you got me goin' now (Got me goin')
+Just like I knew you would (Like I knew you would) /n
+
+Well, shake it up, baby, now (Shake it up, baby)
+Twist and shout (Twist and shout)
+C'mon, c'mon, c'mon, c'mon, baby, now (Come on, baby)
+Come on and work it on out (Work it on out) /n
+
+Well, you twist, you little girl (Twist, little girl)
+You know you twist so fine (Twist so fine)
+Come on and twist a little closer now (Twist a little closer)
+And let me know that you're mine (Let me know you're mine) /n
+
+Well, shake it up, baby, now (Shake it up, baby)
+Twist and shout (Twist and shout)
+C'mon, c'mon, c'mon, c'mon, baby, now (Come on, baby)
+Come on and work it on out (Work it on out) /n
+
+Well, you twist, you little girl (Twist, little girl)
+You know you twist so fine (Twist so fine)
+Come on and twist a little closer now (Twist a little closer)
+And let me know that you're mine (Let me know you're mine) /n
+
+Well, shake it, shake it, shake it, baby, now (Shake it up baby)
+Well, shake it, shake it, shake it, baby, now (Shake it up baby)
+Well, shake it, shake it, shake it, baby, now (Shake it up baby)",
+author_id: 14)
+story11 = Story.create!(title: "Don't Bother Me",
+body: "Since she's been gone
+I want no one
+To talk to me
+It's not the same
+But I'm to blame
+It's plain to see /n
+
+So go away and leave me alone
+Don't bother me /n
+
+I can't believe
+That she would leave
+Me on my own
+It's just not right
+Where every night
+I'm all alone /n
+
+I've got no time for you right now
+Don't bother me /n
+
+I know I'll never be the same
+If I don't get her back again
+Because I know she'll always be
+The only girl for me /n
+
+But till she's here
+Please don't come near
+just stay away
+I'll let you know
+When she's come home
+Until that day /n
+
+Don't come around leave me alone
+Don't bother me /n
+
+I've got no time for you right now
+Don't bother me /n
+
+I know I'll never be the same
+If I don't get her back again
+Because I know she'll always be
+The only girl for me /n
+
+But till she's here
+Please don't come near
+Just stay away
+I'll let you know
+When she's come home
+Until that day /n
+
+Don't come around leave me alone
+Don't bother me
+Don't bother me
+Don't bother me",
+author_id: 14)
+story12 = Story.create!(title: "Roll Over Beethoven",
+body: "Well gonna write a little letter
+Gonna mail it to my local D.J.
+It's a rocking little record
+I want my jockey to play
+Roll over Beethoven
+Gotta hear it again today /n
+
+You know my temperature's rising
+And the jukebox blows a fuse
+My heart beating rhythm
+While my soul keeps singing the blues
+Roll over Beethoven
+And tell Tchaikovsky the news /n
+
+I got a rocking pneumonia
+I need a shot of rhythm and blues
+I think I caught it off the writer
+Sittin' down by the rhythm reviews
+Roll over Beethoven
+We're rockin' in two by two /n
+
+Well if you feel it and like it
+Well get your lover and reel and rock it
+Roll it over and move on up
+Just triffle further and reel and rock it
+Roll it over
+Roll over Beethoven
+A rocking in two by two - Ooo /n
+
+Well early in the morning
+I'm a giving you the warning
+Don't you step on my blue suede shoes
+Hey diddle diddle
+I'll play my fiddle
+Ain't got nothing to lose
+Roll over Beethoven
+And tell Tchaikovsky the news /n
+
+You know she wiggles like a glow worm
+Dance like a spinning top
+She's got a crazy partner
+Oughta see them reel an rock
+Long as she's got a dime
+The music will never stop
+Roll over Beethoven
+Roll over Beethoven
+Roll over Beethoven
+Roll over Beethoven
+Roll over Beethoven
+Dig to these rhythm and blues",
+author_id: 14)
+story13 = Story.create!(title: "Money (That's What I want)",
+body: "The best things in life are free
+But you can keep 'em for the birds and bees /n
+
+Now give me money (that's what I want)
+That's what I want (that's what I want)
+That's what I want (that's what I want) yeah
+That's what I want /n
+
+Your loving give me a thrill,
+But your loving don't pay my bills /n
+
+Now give me money (that's what I want)
+That's what I want (that's what I want)
+That's what I want (that's what I want) yeah
+That's what I want /n
+
+Money don't get everything it's true
+What it don't get I can't use /n
+
+Now give me money (that's what I want)
+That's what I want (that's what I want)
+That's what I want (that's what I want) yeah
+That's what I want /n
+
+Well, now give me money (that's what I want)
+Whole lot of money (that's what I want)
+Whoah yeah, I wanna be free (that's what I want)
+Oh, money (that's what I want)
+That's what I want, yeah (that's what I want)
+That's what I want /n
+
+Well, now give me money (that's what I want)
+Whole lot of money (that's what I want, whoo)
+Whoah, yeah, you know I need money (that's what I want)
+Now give me money (that's what I want, whoo)
+That's what I want, yeah (that's what I want)
+That's what I want",
+author_id: 19)
+story14 = Story.create!(title: "Mary Jane",
+body: "Come here, baby. Mary, I love you. Do it girl. /n
+
+Mary Jane, Mary Jane /n
+
+I'm in love with Mary Jane.
+She's my main thing.
+She makes me feel alright.
+She makes my heart sing.
+And when I'm feeling low,
+She comes as no surprise.
+Turns me on with her love.
+Takes me to paradise. /n
+
+Do you love me, Mary Jane?
+Yeah. Whoa-oh-oh.
+Do ya? Do ya? Do ya? Do ya? Do ya? Do ya?
+Now do you think you love me Mary Jane.
+Don't you play no games. /n
+
+Mary Jane
+I love her just the same.
+Mary Jane
+I love her, Mary baby, just the same. (Mary Jane)
+The woman plays no games (Mary Jane)
+Now, now, now. /n
+
+I'm in love with Mary Jane.
+I'm not the only one.
+If Mary wanna play around,
+I let her have her fun.
+She's not the kind of girl
+that you can just tie down.
+She likes to spread her love
+and turn your head around. /n
+
+Do you love me, Mary Jane?
+Yeah. Whoa-oh-oh.
+Do ya? Do ya? Do ya? Do ya? Do ya? Do ya?
+Now do you think you love me Mary Jane.
+Don't you play no games. /n
+
+Yeahhhhh! Ooowoooo.
+Oh baby. Oh baby. Hit me.
+Whoah, Mary. Only love.
+I love you, yeah. Whooo!
+Something until we give it now, lovey-dove.
+Uh-huh. Wow, baby!
+Sing! La-du-da-da-du-da-dahh.
+Sing! La-du-da-da-du-da-dahh.
+Sing it for me baby.
+Come Mary, Mary Jane.
+Sing it for me baby.",
+author_id: 2)
+story15 = Story.create!(title: "Hypnotize",
+body: "How could you leave me
+Why did you have to say goodbye?
+You should know better
+Now all I do is sit and cry /n
+
+How could you do it
+After the changes we've been through
+Look at me jonesin'
+I'm still so much hung up on you /n
+
+And everytime I see you
+Undress me with your eyes
+And everytime I touch you
+I'm so hypnotized /n
+
+Don't you understand I'm
+Hypnotized by you
+Hey baby, you got me hypnotized, yeah
+And you put a spell on me
+I'll never be free, no I'll never be free /n
+
+What is this magic
+What is this feeling you possess? (you possess)
+Tell me your potion
+A mixture of all your tenderness (tenderness, tenderness) /n
+
+Was it your kisses
+Or was it the way you held me tight? (so tight)
+This strange obsession
+Has you in my fantasy each night (oh baby) /n
+
+And everytime I see you
+Undress me with your eyes
+And everytime I touch you
+I'm so hypnotized /n
+
+Don't you understand I'm
+Hypnotized by you
+Hey baby, you got me hypnotized, yeah /n
+
+And everytime I see you
+Undress me with your eyes
+And everytime I touch you
+I'm so hypnotized /n
+
+Don't you understand I'm
+Hypnotized by you
+Hey baby, you're always on my mind /n
+
+I think about you all the time, girl
+Think about you all the time
+I'll never be free, no I'll never be free /n
+
+Hypnotized
+Hypnotized by you, hypnotized
+Hypnotized by you, I'm hypnotized, baby
+Hypnotized by you, I'm hypnotized
+Hypnotized by you 
+Hypnotized
+Hypnotized
+Hypnotized
+Hypnotized",
+author_id: 2)
+story16 = Story.create!(title: "My Favorite Challah: A Recipe from the Heart",
+body: "The word challah originally meant only the small portion of dough that was put in the oven when baking bread as a reminder of the destruction of the Temple in Jerusalem. It has evolved into the twisted, sweet, almost brioche-like bread that was brought to America by immigrants from Central and Eastern Europe. /n 
+Although straight loaves of braided challah are eaten throughout the year, round challahs, often studded with raisins, are served for Rosh Hashana, and also for Yom Kippur and Sukkot, the holidays celebrating the New Year and the fall harvest. /n 
+Throughout the years, I have picked up tips from challah bakers throughout this country and in Europe and Israel. For example: Several risings make a better loaf, and if you want an especially brioche-like texture, let the dough rise slowly in the refrigerator for one of the three risings. /n 
+The secret to a glossy loaf is to brush with an egg wash twice, once just after braiding and then again just before baking. /n
+PREPARATION /n
+Step 1 /n
+In a large bowl, dissolve yeast and 1 tablespoon sugar in 1 3/4 cups lukewarm water. /n
+Step 2 /n
+Whisk oil into yeast, then beat in 4 eggs, one at a time, with remaining sugar and salt. Gradually add flour. When dough holds together, it is ready for kneading. (You can also use a mixer with a dough hook for both mixing and kneading.) /n
+Step 3 /n
+Turn dough onto a floured surface and knead until smooth. Clean out bowl and grease it, then return dough to bowl. Cover with plastic wrap, and let rise in a warm place for 1 hour, until almost doubled in size. Dough may also rise in an oven that has been warmed to 150 degrees then turned off. Punch down dough, cover and let rise again in a warm place for another half-hour. /n
+Step 4 /n
+To make a 6-braid challah, either straight or circular, take half the dough and form it into 6 balls. With your hands, roll each ball into a strand about 12 inches long and 1 1/2 inches wide. Place the 6 in a row, parallel to one another. Pinch the tops of the strands together. Move the outside right strand over 2 strands. Then take the second strand from the left and move it to the far right. Take the outside left strand and move it over 2. Move second strand from the right over to the far left. Start over with the outside right strand. Continue this until all strands are braided. For a straight loaf, tuck ends underneath. For a circular loaf, twist into a circle, pinching ends together. Make a second loaf the same way. Place braided loaves on a greased cookie sheet with at least 2 inches in between. /n
+Step 5 /n
+Beat remaining egg and brush it on loaves. Either freeze breads or let rise another hour. /n
+Step 6 /n
+If baking immediately, preheat oven to 375 degrees and brush loaves again. If freezing, remove from freezer 5 hours before baking. Then dip your index finger in the egg wash, then into poppy or sesame seeds and then onto a mound of bread. Continue until bread is decorated with seeds. /n
+Step 7 /n
+Bake in middle of oven for 35 to 40 minutes, or until golden. Cool loaves on a rack.",
+author_id: 6)
+story17 = Story.create!(title: "Creamy Baked Macaroni and Cheese",
+body: "This recipe, inspired by Stouffer’s macaroni and cheese, delivers the best of all worlds: creamy, saucy comfort, with a consistency that’s slightly more set than a stovetop version, thanks to a final bake in the oven. It stays voluptuous and molten as a result of a higher ratio of sauce to noodles, which are cooked completely so they don’t soak up as much liquid. /n 
+The Velveeta is necessary here, as it has sodium citrate, which prevents the sauce from separating in the oven. Elbow macaroni works fine, but cavatappi is an especially fun shape to eat with its telephone-cord bounciness. /n
+PREPARATION /n
+Step 1 /n
+Heat oven to 350 degrees. /n
+Step 2 /n
+Bring a large pot of water to a boil and season generously with salt. Add the pasta and cook according to package instructions, stirring occasionally with a wooden spoon, until just past al dente. Drain and set aside. /n
+Step 3 /n
+Return the empty pot to the stove (no need to clean it) and set over medium heat. Melt the butter and simmer, whisking occasionally, until the butter stops spurting and quiets down, 2 to 3 minutes. Add the flour and cook, whisking, until smooth like gravy, about 1 minute. /n
+Step 4 /n
+Whisk in the milk. Raise the heat to high and bring to a simmer, whisking constantly, then immediately reduce the heat to low and continue simmering until the sauce lightly coats the back of a spoon, 2 to 5 minutes. At this stage, the sauce should be smooth but relatively loose. Take the pot off the heat. /n
+Step 5 /n
+To the pot, add the Cheddar, Velveeta, Pecorino Romano, mustard powder, onion powder and cayenne, and season generously with salt and black pepper. Whisk until the cheese is melted and smooth like nacho cheese. Add the drained pasta, breaking up any clumps, and stir until evenly coated in the cheese sauce. Taste and adjust seasoning with salt and pepper. /n
+Step 6 /n
+Transfer to a 9-by-13-inch baking pan or dish and bake until bubbling at the edges, 15 to 20 minutes. Serve immediately.",
+author_id: 14)
 
 # Create Bookmarks
 Bookmark.destroy_all

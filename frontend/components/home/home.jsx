@@ -2,14 +2,23 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import MainNavContainer from '../nav/main_nav_container';
 import TrendingIndex from '../story/trending_index';
-import StoryIndexContainer from '../story/story_index_container';
+import StoryIndexContainer from '../story/story_index_container'
 // import SplashPic from '../../../app/assets/images/splash-pic.jpg';
 
 class Home extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.checkCurrentUser = this.checkCurrentUser.bind(this);
+    }
 
     // Add componentDidMount to fetch the stories
     componentDidMount() {
         this.props.fetchStories();
+    }
+
+    checkCurrentUser() {
+        this.props.currentUser ? this.props.history.push('/story/new') : this.props.showModal("signup") 
     }
 
     render() {
@@ -44,7 +53,7 @@ class Home extends React.Component {
                 <div id="splash-background" style={{backgroundImage: `url(${window.splash})`}}>
                     <div id="splash-container">
                         <h1 id="splash-text">Medio is a place to write, read, and connect.</h1>
-                        <button id="start-writing-btn" onClick={() => this.props.showModal("signup")}>Start Writing</button>
+                        <button id="start-writing-btn" onClick={this.checkCurrentUser}>Start Writing</button>
                     </div>
                 </div>
                 <div id="trending-header">
