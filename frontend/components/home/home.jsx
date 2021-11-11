@@ -42,6 +42,7 @@ class Home extends React.Component {
                     <div className="discover-links-container">
                         <a href="https://www.linkedin.com/in/matteo-rossant-26ab65106/" className="discover-links">LinkedIn</a>
                         <a href="https://github.com/MRossant" className="discover-links">GitHub</a>
+                        <a href="https://angel.co/u/matteo-rossant-1" className="discover-links">AngelList</a>
                     </div>
                 </div>
             </div>

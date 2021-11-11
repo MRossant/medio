@@ -63,6 +63,10 @@
         border: 0.2px solid rgba(117, 117, 117, 1);
         font-family: Arial, Helvetica, sans-serif;
         font-size: 14px;
+
+        &:hover {
+            color: green;
+        }
     }
 
     .discover-footer-tagline {
@@ -78,6 +82,10 @@
 
         &:visited {
             color:rgba(117, 117, 117, 1);
+        }
+
+        &:hover {
+            color: green;
         }
     }
 }

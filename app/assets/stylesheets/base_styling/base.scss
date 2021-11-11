@@ -15,6 +15,9 @@
             &:visited {
                 color: black;
             }
+            &:hover {
+                color: green;
+            }
         }
     }
     .session-items {
@@ -38,6 +41,9 @@
 .nav-link-login {
     margin-right: 25px;
     text-decoration: none;
+    &:hover {
+        color: green;
+    }
 }
 
 .main-session-form {
