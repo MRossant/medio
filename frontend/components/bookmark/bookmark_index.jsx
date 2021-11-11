@@ -51,6 +51,7 @@ class BookmarkIndex extends React.Component {
                                 fetchStory={this.props.fetchStory}
                                 fetchUser={this.props.fetchUser}
                                 stories={stories}
+                                deleteBookmark={this.props.deleteBookmark}
                                 />
                                 ))
                             }

@@ -167,6 +167,14 @@
 
         .dropdown-item {
             padding: 20px;
+
+            &:hover {
+                color: green;
+            }
+
+            .signout:hover {
+                color: red;
+            }
         }
 
         .dropdown-user-info {
@@ -215,10 +223,6 @@
 
     &:visited {
         color: inherit;
-    }
-
-    &:hover {
-        color: black;
     }
 }
 

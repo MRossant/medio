@@ -31,7 +31,7 @@ class UserNav extends React.Component {
                         <Link className="dropdown-link" to="/story/saves">Saves</Link>
                     </li>
                     <li className="dropdown-item">
-                        <Link className="dropdown-link" to="/" onClick={this.signOut}>Sign Out</Link>
+                        <Link className="dropdown-link signout" to="/" onClick={this.signOut}>Sign Out</Link>
                     </li>
                 </ul>
             </div>
