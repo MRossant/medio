@@ -19,8 +19,6 @@ const App = () => (
         <UserProfileModal />
         <Switch>
             <Route exact path="/" component={HomeContainer} />
-            <Route exact path="/login" component={LoginFormContainer}/>
-            <Route exact path="/signup" component={SignUpFormContainer}/>
             <Route exact path="/stories/:storyId" component={StoryShowContainer}/>
             <Route exact path="/users/:userId" component={UserShowContainer}/>
             <ProtectedRoute exact path="/story/new" component={StoryFormContainer}/>

@@ -25,7 +25,7 @@ class UserShow extends React.Component {
         const storiesArr = Object.values(this.props.user.stories).reverse();
 
         const display = storiesArr.length === 0 ? (
-            <h1>{this.props.user.full_name} has no stories...</h1>
+            <h1 className="no-stories">{this.props.user.full_name} has no stories...</h1>
         ) : (
             <ul>
                 {
