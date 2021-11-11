@@ -14,12 +14,12 @@ class UserShowNav extends React.Component {
     render() {
         const { currentUser } = this.props;
         const { user } = this.props;
-    
+        const followBtn = currentUser.id === user.id ? (<p></p>) : (<button className="follow-user-btn">Follow</button>)
         const leftNav = (
             <div className="user-show-left-nav">
                 <Link to="/" id="user-show-logo-link">Medio</Link>
                 <h1 id="user-show-author">{user.full_name}</h1>
-                <button className="follow-user-btn">Follow</button>
+                {followBtn}
             </div>
         );
 

@@ -3,6 +3,7 @@ import StoryNavContainer from '../nav/story_nav_container';
 import UserStoryIndexItem from './user_story_index_item';
 import UserShowNavContainer from './user_show_nav_container';
 import MainNavContainer from '../nav/main_nav_container';
+import {Link} from 'react-router-dom';
 
 class UserShow extends React.Component {
 
@@ -23,9 +24,17 @@ class UserShow extends React.Component {
         }
         // shows most recent written stories first
         const storiesArr = Object.values(this.props.user.stories).reverse();
+        const switchNoStories = this.props.currentUser.id === this.props.user.id ? (
+            <div>
+                <h1 className="no-stories">You have no stories...</h1>
+                <Link id="write-story-btn" to="/story/new">Write a Story</Link>
+            </div>
+        ) : (
+            <h1 className="no-stories">{this.props.user.full_name} has no stories.</h1>
+        );
 
         const display = storiesArr.length === 0 ? (
-            <h1 className="no-stories">{this.props.user.full_name} has no stories...</h1>
+            <div>{switchNoStories}</div>
         ) : (
             <ul>
                 {
