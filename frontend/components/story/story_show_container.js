@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import {fetchStory} from '../../actions/story_actions';
+import {fetchStory, deleteStory} from '../../actions/story_actions';
 import StoryShow from './story_show';
 import { fetchUser } from '../../actions/user_actions';
 import { showModal } from "../../actions/modal_actions";
@@ -15,7 +15,8 @@ const mDTP = dispatch => ({
     fetchStory: storyId => dispatch(fetchStory(storyId)),
     fetchUser: userId => dispatch(fetchUser(userId)),
     showModal: content => dispatch(showModal(content)),
-    logout: () => dispatch(logout())
+    logout: () => dispatch(logout()),
+    deleteStory: storyId => dispatch(deleteStory(storyId))
 });
 
 export default connect(mSTP, mDTP)(StoryShow);

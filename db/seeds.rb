@@ -470,6 +470,51 @@ To the pot, add the Cheddar, Velveeta, Pecorino Romano, mustard powder, onion po
 Step 6 /n
 Transfer to a 9-by-13-inch baking pan or dish and bake until bubbling at the edges, 15 to 20 minutes. Serve immediately.",
 author_id: 14)
+story18 = Story.create!(title: "No-Bake Cheesecake",
+body: "There are certain days during the summer when the last place anyone wants to be is in a hot kitchen. But that's when kids can come to the rescue, making a delicious dessert for the whole family without ever having to ask their parents to turn on the oven. This no-bake cheesecake is sure to please with its creamy center. /n
+Directions /n
+Step 1 /n
+Put graham crackers in a large resealable plastic bag, and crush them with a rolling pin until very fine crumbs form. /n
+
+Step 2 /n
+Pour crumbs into a medium bowl; stir in sugar. Add butter, and stir until well combined. /n
+
+Step 3 /n
+Press the crumb mixture into a 9-inch springform pan, spreading it 1 1/2 to 2 inches up the side; press flat. Chill crust in freezer at least 10 minutes. /n
+
+Step 4 /n
+Meanwhile, make the filling: Using an electric mixer set at medium-high speed, beat the cream cheese in a large bowl until smooth. Beat in the condensed milk a little at a time, scraping the sides of the bowl, as necessary. Beat in the lemon juice and vanilla. /n
+
+Step 5 /n
+Pour the filling into the crust; smooth the top with a rubber spatula. Cover with plastic wrap, and refrigerate until firm, 2 1/2 to 3 hours. /n
+
+Step 6 /n
+Unclasp sides of pan, and remove cheesecake.",
+author_id: 14)
+story19 = Story.create!(title: "Magnolia Bakery Vanilla Cupcakes",
+body: "The most popular flavor at the celebrated New York City bakery is vanilla for a reason! With a moist, tender crumb and rich buttercream frosting, these cupcakes are a true classic. This recipe comes from 'More from Magnolia: Recipes from the World-Famous Bakery and Allysa Torey's Home Kitchen.' /n
+Directions /n
+Step 1 /n
+Preheat oven to 350 degrees. Line two 12-cup muffin tins with paper liners; set aside. In a small bowl, combine flours; set aside. In the bowl of an electric mixer fitted with the paddle attachment, cream butter until smooth and creamy. Gradually add sugar, beating until fluffy, about 3 minutes. Add eggs, one at a time, beating well after each addition. Add dry ingredients in 3 parts, alternating with the milk and vanilla, and scraping down sides of bowl in between each addition; beat until ingredients are incorporated but do not overbeat. /n
+
+Step 2 /n
+Divide batter evenly among liners, filling about three-quarters full. Bake, rotating pan halfway through, until a cake tester inserted in the center comes out clean, 20 to 25 minutes. /n
+
+Step 3 /n
+Transfer to a wire rack to cool in tins for 15 minutes. Remove cupcakes from tins, and cool completely on rack. Once cupcakes have cooled, use a small offset spatula to frost tops of each cupcake. Serve at room temperature.",
+author_id: 14)
+story20 = Story.create!(title: "John Legend's Macaroni and Cheese",
+body: "When musician John Legend visited Martha Stewart, he shared this recipe for his favorite Southern comfort food. Learn how to make the singer's delicious, creamy macaroni and cheese at home. /n
+Directions /n
+Step 1 /n
+Preheat oven to 375 degrees. Generously butter a 13-by-9-inch glass baking dish; set aside. Bring a large pot of water to a boil; add salt and macaroni. Cook until al dente according to package directions. Drain, and return to pot. Add butter, and toss until pasta is coated and butter has melted; set aside. /n
+
+Step 2 /n
+In a medium bowl, whisk together evaporated milk, skim milk, and eggs. Add seasoned salt, garlic powder, 1 teaspoon salt, and 1/2 teaspoon pepper; set aside. In another medium bowl, combine cheeses; set aside. /n
+
+Step 3 /n
+Place 1/3 macaroni in an even layer in the bottom of prepared baking dish; cover evenly with 1/3 cheese. Repeat with remaining macaroni and cheese mixture. Pour milk mixture evenly over contents of baking dish. Sprinkle with paprika. Bake until top layer is lightly browned, 35 to 45 minutes. Let stand 10 to 15 minutes before serving.",
+author_id: 14)
 
 # Create Bookmarks
 Bookmark.destroy_all

@@ -3,6 +3,11 @@ import { Link } from 'react-router-dom';
 import StoryNavContainer from '../nav/story_nav_container';
 
 class StoryShow extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.removeStory = this.removeStory.bind(this);
+    }
 
     componentDidMount() {
         this.props.fetchStory(this.props.match.params.storyId)
@@ -25,11 +30,20 @@ class StoryShow extends React.Component {
         return formattedArr
     }
 
+    removeStory() {
+        this.props.deleteStory(this.props.story.id);
+        this.props.history.push(`/users/${this.props.currentUser.id}`);
+    }
+
     render() {
 
         if (!this.props.story) {
             return null
         }
+
+        const removeStoryBtn = this.props.currentUser.id === this.props.story.author_id ? (
+            <button onClick={this.removeStory} id="delete-story-btn">Delete this story</button>
+        ) : (<div></div>);
 
         const leftNav = (
             <div className="story-author-nav">
@@ -53,6 +67,7 @@ class StoryShow extends React.Component {
                         <div className="story-show-body">
                             {this.formatBody(this.props.story.body)}
                         </div>
+                        {removeStoryBtn}
                     </div>
                 </div>
             </div>
