@@ -2,6 +2,8 @@
 
 Medio is a social media blog where users can write, read, share and connect. 
 
+![Screen Shot 2021-11-12 at 9 33 03 AM](https://user-images.githubusercontent.com/37129932/141483513-f8714ac9-3d78-4a56-b3fb-b6c332646880.png)
+
 # Live Link
 
 https://medio1.herokuapp.com/#/
