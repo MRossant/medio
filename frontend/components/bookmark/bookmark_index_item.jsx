@@ -45,7 +45,7 @@ class BookmarkIndexItem extends React.Component {
                 <Link className="bookmark-body" to={`/stories/${story.id}`}>{this.formatBody(story.body)}</Link>
                 <div className="bookmark-footer">
                     <Link className="bookmark-read-more" to={`/stories/${story.id}`}>Read more</Link>
-                    <span onClick={this.update} className="bookmark-remove">Remove from list</span>
+                    <span onClick={this.update} className="bookmark-remove">Remove</span>
                 </div>
             </div>
         )
