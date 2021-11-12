@@ -46,12 +46,15 @@ class BookmarkIndex extends React.Component {
                         {
                             bookmarkArr.map((bookmark, idx) => (
                                 <BookmarkIndexItem 
-                                bookmark={bookmark} 
+                                bookmark={bookmark}
                                 key={idx}
                                 fetchStory={this.props.fetchStory}
                                 fetchUser={this.props.fetchUser}
                                 stories={stories}
+                                fetchBookmarks={this.props.fetchBookmarks}
+                                storyId={bookmark.bookmarked_story_id}
                                 deleteBookmark={this.props.deleteBookmark}
+                                history={this.props.history}
                                 />
                                 ))
                             }

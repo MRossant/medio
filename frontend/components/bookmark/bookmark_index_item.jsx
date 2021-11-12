@@ -2,6 +2,17 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 class BookmarkIndexItem extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.update = this.update.bind(this)
+    }
+    
+    update() {
+        this.props.deleteBookmark(this.props.bookmark.id)
+        window.location.reload(false);
+    }
+
 
     formatDate = dateString => {
         const options = { month: "short", day: "numeric" }
@@ -17,11 +28,12 @@ class BookmarkIndexItem extends React.Component {
     render() {
         
         const story = this.props.stories[this.props.bookmark.bookmarked_story_id];
-        const author = story.author
         
-        if (!story || !author) {
+        if (!story) {
             return null
         }
+
+        const author = story.author
 
         return (
             <div className="bookmarked-index-item">
@@ -31,7 +43,10 @@ class BookmarkIndexItem extends React.Component {
                 </div>
                 <Link className="bookmark-title" to={`/stories/${story.id}`}>{story.title}</Link>
                 <Link className="bookmark-body" to={`/stories/${story.id}`}>{this.formatBody(story.body)}</Link>
-                <Link className="bookmark-read-more" to={`/stories/${story.id}`}>Read more</Link>
+                <div className="bookmark-footer">
+                    <Link className="bookmark-read-more" to={`/stories/${story.id}`}>Read more</Link>
+                    <span onClick={this.update} className="bookmark-remove">Remove from list</span>
+                </div>
             </div>
         )
     }
