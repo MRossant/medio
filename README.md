@@ -1,9 +1,29 @@
-# README
+# Introducing: Medio
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Medio is a social media blog where users can write, read, share and connect. 
 
-Things you may want to cover:
+# Live Link
+
+https://medio1.herokuapp.com/#/
+
+# Medio's Stack
++ Ruby / Rails
++ Postgresql
++ SCSS and HTML
++ React and Redux
++ JS
+
+# Medio's Features
++ Sign up your own personal account or login with the demo user to take a peak around the website. 
++ Write, read, edit and delete stories.
++ Bookmark stories to read later. 
+
+# Code Snippet
+
+![alt text](https://github.com/MRossant/medio/blob/[branch]/image.jpg?raw=true)
+
+
+
 
 * Ruby version
 
