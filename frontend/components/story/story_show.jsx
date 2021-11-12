@@ -41,9 +41,14 @@ class StoryShow extends React.Component {
             return null
         }
 
-        const removeStoryBtn = this.props.currentUser.id === this.props.story.author_id ? (
-            <button onClick={this.removeStory} id="delete-story-btn">Delete this story</button>
-        ) : (<div></div>);
+        let removeStoryBtn;
+        if (!this.props.currentUser) {
+            removeStoryBtn = (<div></div>);
+        } else if (this.props.currentUser.id === this.props.story.author_id) {
+            removeStoryBtn = (<button onClick={this.removeStory} id="delete-story-btn">Delete this story</button>);
+        } else {
+            removeStoryBtn = (<div></div>);
+        }
 
         const leftNav = (
             <div className="story-author-nav">
